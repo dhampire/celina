@@ -1,0 +1,17 @@
+.btn{
+    border-radius: var(--btn-radius);
+    border: none;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+    min-width: 100px;
+    padding: calc( 1rem / 3) 1rem;
+    text-align: center;
+
+
+
+    &__primary{
+        background: var(--green);
+        color:      var(--black)
+    }
+}

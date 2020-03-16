@@ -1,0 +1,40 @@
+/* TEXT FORMAT*/ 
+
+@font-face {
+    font-family: 'Nature Beauty Personal Use';
+    src: url('../../fonts/NatureBeautyPersonalUse.eot');
+    src: url('../../fonts/NatureBeautyPersonalUse.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/NatureBeautyPersonalUse.woff2') format('woff2'),
+        url('../../fonts/NatureBeautyPersonalUse.woff') format('woff'),
+        url('../../fonts/NatureBeautyPersonalUse.ttf') format('truetype'),
+        url('../../fonts/NatureBeautyPersonalUse.svg#NatureBeautyPersonalUse') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.text-center{
+    text-align: center;
+}
+.justify {
+    text-align: justify;
+}
+
+/* TEXT SIZES */
+.l{
+    font-size: 1.5rem;
+}
+.xl{
+    font-size: 2.5rem;
+}
+.xxl{
+    font-size: 3.5rem;
+    line-height: 1;
+    font-weight: 700;
+}
+.xxxl{
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: 700;
+}

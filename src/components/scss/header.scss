@@ -1,0 +1,19 @@
+.header {
+    align-items: center;
+    background: var(--white);
+    display: grid;
+    grid-template-columns: 150px 1fr 180px;
+    grid-gap: 1rem;
+
+    h1 {
+        margin: 0;
+    }
+    a {
+        color: var(--black);
+        text-decoration: none;
+    }
+}
+.top__header{
+    display: grid;
+    justify-items: right;
+}

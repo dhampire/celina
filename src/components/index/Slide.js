@@ -28,7 +28,7 @@ const Slide = () => {
 
   return (
     <BackgroundImage fluid={data.bgSlide.childImageSharp.fluid} className="slide">
-      <div className="black-overlay grid center">
+      <div className="black-overlay grid center m-0 p-0">
         <div className="content-box text-center">
             <h2 className="xxxl">Construimos tu futuro</h2>
             <div className="btn btn__primary xl">Contactanos</div>

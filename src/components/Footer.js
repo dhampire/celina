@@ -4,7 +4,9 @@ import Img from "gatsby-image"
 import BackgroundImage from "gatsby-background-image"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faChevronRight, faEnvelope, faPhoneAlt, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+
 
 import Menu from "./header/menu"
 
@@ -31,40 +33,48 @@ const Footer = () => {
 
     return(
         <BackgroundImage fluid={data.bgFooter.childImageSharp.fluid}>
-            <div className="footer container grid grid-3 black-overlay black-overlay--green ">
+            <div className="footer container grid grid-3 black-overlay black-overlay--green m-0">
                 <div className="">
                     <h3>Menú</h3>
                         <Menu />
-                    <h3><FontAwesomeIcon icon="coffee" /> Redes Sociales</h3>
+                    <h3>Redes Sociales</h3>
                     <ul className="social__media">
-                        <li></li>
+                        <li className="social__media--list"><FontAwesomeIcon icon={faFacebookF} /></li>
+                        <li className="social__media--list"><FontAwesomeIcon icon={faTwitter} /></li>
+                        <li className="social__media--list"><FontAwesomeIcon icon={faInstagram} /></li>
                     </ul>
                 </div>
                 <div className=""><h3>Nuestros Proyectos</h3>
                     <div className="grid grid-2 mt-0">
                         <ul>
-                            <li>Celina 1</li>
-                            <li>Celina 2</li>
-                            <li>Celina 3</li>
-                            <li>Celina 4</li>
-                            <li>Celina 5</li>
+                            <li><FontAwesomeIcon icon={faChevronRight} className="footer--icons"/> Celina 1</li>
+                            <li><FontAwesomeIcon icon={faChevronRight} className="footer--icons"/> Celina 2</li>
+                            <li><FontAwesomeIcon icon={faChevronRight} className="footer--icons"/> Celina 3</li>
+                            <li><FontAwesomeIcon icon={faChevronRight} className="footer--icons"/> Celina 4</li>
+                            <li><FontAwesomeIcon icon={faChevronRight} className="footer--icons"/> Celina 5</li>
                         </ul>
                         <ul>
-                            <li>Celina 7</li>
-                            <li>Paraíso</li>
-                            <li>Rancho Nuevo</li>
-                            <li>Santa Rosa</li>
-                            <li>Santa Rosa 2</li>
+                            <li><FontAwesomeIcon icon={faChevronRight} className="footer--icons"/> Celina 7</li>
+                            <li><FontAwesomeIcon icon={faChevronRight} className="footer--icons"/> Paraíso</li>
+                            <li><FontAwesomeIcon icon={faChevronRight} className="footer--icons"/> Rancho Nuevo</li>
+                            <li><FontAwesomeIcon icon={faChevronRight} className="footer--icons"/> Santa Rosa</li>
+                            <li><FontAwesomeIcon icon={faChevronRight} className="footer--icons"/> Santa Rosa 2</li>
                         </ul>  
                     </div>            
                 </div>
                 <div className="">
                     <h3>Dirección</h3>
-                    <p>Avenida Cañoto Esquina Libertad #879 Edificio Celina</p>
+                    <ul>
+                        <li> <FontAwesomeIcon icon={faMapMarkerAlt}  className="footer--icons"/> Avenida Cañoto Esquina Libertad #879 Edificio Celina</li>
+                    </ul>
                     <h3>Teléfono</h3>
-                    <p>(591) (3) 3375363</p>
-                    <h3>Email</h3>
-                    <p>info@celina.com.bo</p>
+                    <ul>
+                        <li><FontAwesomeIcon icon={faPhoneAlt}  className="footer--icons"/> (591) (3) 3375363</li>
+                    </ul>
+                    <h3> Email</h3>
+                    <ul>
+                        <li><FontAwesomeIcon icon={faEnvelope}  className="footer--icons"/> info@celina.com.bo</li>
+                    </ul>
                 </div>
                 <div className="footerLogo">
                     <Img

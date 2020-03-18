@@ -50,7 +50,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Terrenos en venta" />
         <Slide />
-      <div className="great__place container grid grid-2">
+      <div className="great__place container grid grid-2 mt-0">
         <div className="great__place--text">
           <h4 className="l">Reconocimiento</h4>
           <h2 className="xxl">GREAT PLACE TO WORK 2019</h2>

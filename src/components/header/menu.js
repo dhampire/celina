@@ -11,7 +11,7 @@ const Menu = () => {
           <a href="/">Nosotros</a>
         </li>
         <li>
-          <Link to="/projectos">Proyecto</Link>
+          <Link to="/projectos">Proyectos</Link>
         </li>
         <li>
           <a href="/">Responsabilidad Social</a>

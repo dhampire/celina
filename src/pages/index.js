@@ -9,6 +9,12 @@ import SEO from "../components/seo"
 import Slide from "../components/index/Slide"
 import Counter from "../components/index/Counter"
 import Projects from "../components/index/Proyectos"
+import Clients from "../components/index/Clients"
+import Credentials from "../components/Credentials"
+import Maps from "../components/Maps"
+import Form from "../components/Form"
+
+const mapURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&key=${Credentials.mapKey}`
 
 const IndexPage = () => {
 
@@ -161,14 +167,18 @@ const IndexPage = () => {
         </div>
       </div>
 
-      <div className="client container grid grid-2 text-center">
-        <div className="xxl">CLIENTES FELICES</div>
-        <div className="xxl">+ 55.000</div>
-      </div>
+      <Clients />
       <div className="contact container grid grid-2">
         <div className="title--index xxl">Contacto</div>
-        <div className="">Map</div>
-        <div className="">Form</div>
+        <div className="">
+          <Maps
+            googleMapURL = {mapURL}
+            loadingElement={<div style={{ height: `100%` }} />}
+            containerElement={<div style={{ height: `400px` }} />}
+            mapElement={<div style={{ height: `100%` }} />}
+         />
+         </div>
+        <div className=""><Form /></div>
       </div>
       
       <Link to="/page-2/"></Link>

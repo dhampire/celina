@@ -10,4 +10,14 @@
 .iconHand {
     max-width: 80px;
     margin: 50px auto 0;
+
+    &--gp{
+        max-width: 180px; 
+        margin: 0 auto;
+    }
+}
+
+.iconValores{
+    width: 100px; 
+    margin: 0 auto;
 }

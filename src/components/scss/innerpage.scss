@@ -1,0 +1,26 @@
+.title__page{
+    min-height: 40vh;
+}
+
+.celina15 {
+    float: right;
+    width: 200px;
+    height: auto;
+    margin-left: 1rem;
+}
+
+.cultura{
+    line-height: 1.5;
+    &--dinamica{
+        color: var(--lightblue);
+    }
+}
+.valores{
+    display: grid;
+    justify-items: center;
+    align-content: space-around;
+
+    h3{
+        color: var(--lightblue);
+    }
+}
